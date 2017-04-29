@@ -21,6 +21,26 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="0"
+        android:layout_marginBottom="8dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ 3 points"
+        android:layout_marginBottom="8dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ 2 points"
+        android:layout_marginBottom="8dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:layout_marginBottom="8dp"
         />
 
 </LinearLayout>
