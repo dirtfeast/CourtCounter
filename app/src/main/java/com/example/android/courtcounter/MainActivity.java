@@ -45,17 +45,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void addThreeTeamB(View view) {
         scoreTeamB += 3;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void addTwoTeamB(View view) {
         scoreTeamB += 2;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
     public void addOneTeamB(View view) {
         scoreTeamB += 1;
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
 
