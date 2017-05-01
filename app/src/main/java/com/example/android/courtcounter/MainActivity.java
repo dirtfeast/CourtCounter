@@ -16,47 +16,58 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // Reset both scores to zero
+    public void reset(View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
+
      // Displays the score for Team A
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
+    // Team A increment by 3, display
     public void addThreeTeamA(View view) {
         scoreTeamA += 3;
         displayForTeamA(scoreTeamA);
     }
 
+    // Team A increment by 2, display
     public void addTwoTeamA(View view) {
         scoreTeamA += 2;
         displayForTeamA(scoreTeamA);
     }
-
+    // Team A increment by 1, display
     public void addOneTeamA(View view) {
         scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
     }
 
-    // Displays the score for Team B
+    // Team B display score
     public void displayForTeamB(int scoreB) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(scoreB));
     }
 
+    // Team B increment by 3, display
     public void addThreeTeamB(View view) {
         scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
     }
-
+    // Team B increment by 2, display
     public void addTwoTeamB(View view) {
         scoreTeamB += 2;
         displayForTeamB(scoreTeamB);
     }
 
+    // Team B increment by 1, display
     public void addOneTeamB(View view) {
         scoreTeamB += 1;
         displayForTeamB(scoreTeamB);
     }
-
 
 }
